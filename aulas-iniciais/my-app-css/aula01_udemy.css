@@ -1,0 +1,181 @@
+/*seletor{propriedade:valor;}
+
+h1 {color:red;
+font-size: 16px; 
+}
+
+Inline -  não utilizar
+Interno - tambem não utilizado.
+Arquivo externo - melhor forma de usar 
+
+HTML <p> ... </p>
+
+CSS p { ... }
+
+
+HTML <p class="minha-classe"> ... </p>   todo atributo html aceita receber um atributo class
+
+CSS .minha-classe { ... }
+
+                    ou                    
+                  
+HTML <p id="meu-id"> ... </p>   todo atributo html aceita receber um atributo class
+
+CSS #meu-id { ... }
+
+Font 
+Existem mais porem formatação são mais comuns essas:
+
+font-family - Familia da fonte 
+font-size - tamanho da fonte  
+font-style - só se é italico
+font-variant - mudar forma de escrita
+
+text
+
+
+text-aling - a direita ou a esquerda
+text-decoration - subilinhado ou não
+text-ident - se tem espaçamento no paragrafo ou não
+text-transform - tudo maiusculo ou minusculo
+
+RGB:
+#RGB
+#FFFFFF - CÓDIGO EXADCIMAL F é o maximo dessa cor. 0-9 e A,B,C,D,F.
+Pode ser usado como valor de color ou background-color
+
+CSS MODELO DE CAIXA
+
+https://3.bp.blogspot.com/-x3DnboKrOb8/Uxk5Cqdj1hI/AAAAAAAAA9w/bKPG5CtGDCM/s1600/box-model-modelo-caixa-css.png
+
+Margin - espassamento externo ao elemento de CSS
+
+Padding - espassamento interno ao elemento de CSS
+Elemento: Background, etc
+
+podendo definir tudo em uma linha ex:
+p{margin: 50px - top 40px - R 30px - B 20px; - L} Sentido horárior
+
+Temos a propriedade border
+h1{
+  border-style: dotted;
+  border-width: 5px;
+  border-color: red;
+}
+OU 
+
+h1{border:dotted 5px red;}
+
+a:link{...}
+a:visited{...}
+a:hover{...}
+a:active{...}
+
+List-style
+
+h1{
+  list-style-type: disc;
+  list-style-position: inherit;
+  list-style-image: -webkit-gradient(50px);
+ }
+
+ jpg/jpeg
+ png
+ gif     
+webp   bitmap
+
+ svg Vetorial
+
+ as <div id="..."> foram alteradas para deixar o código mais semantico para:
+ <header>parte superior ou cabeçalho</header>
+ <nav>navegação ou menu</nav>
+ <main>conteudo central de navegação</main>
+ <footer>rodapé</>
+ <span> dentro de um determinado texto para dar destaque.
+
+  <section> representa seção de uma página dividir o conteudo em blocos
+  <article> ponto central da página.
+  <aside> conteudo a parte da página, conteudo de propaganda
+
+  tag <section> serve para dar setores dento do código separar por caixas--!
+  Exemplo: se eu tiver 2 tags <section> e em uma eu tiver um <h1> e na outra um <p> no css é possivel espaçar utilizando a tag margin-anyway
+
+ cntrl + k + m
+ .html - criar com emmet
+dl= definition list
+ dt= definition term
+ dd= definition descrition
+
+
+ overflow tem varias propriedades como a: visible, hidden, scrool e auto. (gambiarra para limpar elementos com float)
+
+visible = deixa visivel
+
+hidden = esconde
+
+scrool = cria uma barra de rolagem.
+
+auto = ele adiciona somente o necessário. (scrool)
+
+
+ reforço:
+ width = LARGURA
+ height = ALTURA
+
+
+
+                  TABELAS
+
+ iniciar com a tag <table> e termina com </table> onde tr, vai estar abaixo de table e td abaixo de todas, mas dentro de tr.
+ caption = titulo da tabela ---- importante---
+ tr = table rool
+ td = table data
+ tfoot = rodapé da tabela
+ th = table header -----> para adicionar mais semântica <-----
+ tbody = table body -----> para adicionar mais semântica <-----
+
+ usando atributos:
+ 
+ COLSPAN:
+mesclagem de coluna
+<table>
+ <tr>
+ <td colspan="2">1A</td>    ---------------> importante exemplo <--------------  
+ </tr>
+</tables>
+
+ ROWSPAN:
+ mesclagem de linha
+<table>
+ <tr>
+  <td rowspan="2">1A</td>    ---------------> importante exemplo <-------------- 
+  <td>1B</td>
+  </tr>
+</tables>
+
+
+Propriedade border-collapse:
+valores atribuidos:
+separate = padrão, não precisa dazer nada.
+collapse = ele gruda as tabelas, não adianta atribuir css, pois não vai funcionar.
+--------------------------------------------------SEÇÃO 6 -------------------------------------------------
+
+______________________________FORMULÁRIOS__________________________________________
+COMO CRIAR? html.
+
+tag
+<form>
+<input> - entrada de dados
+
+ATRIBUTOS
+text, submit, value "ok"
+
+metodos de envio das informações:
+
+metodo GET e metodo POST
+
+GET = Feita na propria URL; ------ poucos dados sem segurança ------
+
+POST = Envia junto com a requisição; ----- muitos dados ou dados que precisão de segurança back/end------
+
+*/
