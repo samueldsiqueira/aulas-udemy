@@ -1,0 +1,91 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+
+<head>
+    <title> pagina de exemplo estrutura basica </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Daniel">
+    <meta name="description" content="descrição bacanuda">
+    <meta name="keywords" content="html5, tecnologia">
+
+    <style>
+        li ul {
+            height: 0;
+            /*-altura*/
+            overflow: hidden;
+            /*esconde o conteudo que excede o tamanho que foi definido na altura*/
+            transition: height .5s;
+        }
+
+        /*esconde a tag selecionada*/
+
+        li:hover {
+            background: #ccc;
+            /*dar uma cor de fundo quando passar o mouse*/
+        }
+
+        li:hover ul {
+            /*mostrar o que tem dentro da tag selecionada no caso UL que está dentro da LI*/
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2
+            <ul>
+                <!---dentro do item de lista (outra lista)-->
+                <li>item 2.1</li>
+                <li>item 2.2</li>
+            </ul>
+        </li>
+        <li>item 3</li>
+    </ul>
+
+    <hr>
+
+    <dl>
+
+        <dt>HTML</dt>
+        <!---termo-->
+        <dd>Linguagem de marcação de Hypertexto</dd>
+        <!---definição-->
+
+        <dt>CSS</dt>
+        <dd>Linguagem para criação de folhas de estilos</dd>
+
+    </dl>
+
+    <hr>
+
+    <dl>
+        <dt>www</dt>
+        <!--termo-->
+        <dt>internet</dt>
+        <dd>rede mundial de computadores</dd>
+        <!--descrição ou definição-->
+
+        <dt>Javascrit</dt>
+        <!--termo-->
+        <dd>linguagem script para internet</dd>
+        <dd>script para rodar no browser</dd>
+        <!--definições-->
+    </dl>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
