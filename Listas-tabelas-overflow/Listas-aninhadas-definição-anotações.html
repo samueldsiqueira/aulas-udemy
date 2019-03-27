@@ -3,60 +3,60 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Anotações para listas</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-  <script src="main.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Anotações para listas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css">
+	<script src="main.js"></script>
 </head>
 
 <body>
-  <!--Listas aninhadas nada mais é que uma tag dentro da outra
+	<!--Listas aninhadas nada mais é que uma tag dentro da outra
   ex:-->
 
-  <ul>
-    <li></li>
-    <li>
-      <ul>
-        <li></li>
-        <li></li>
-      </ul>
-    </li>
-    <li></li>
-    </div>
+	<ul>
+		<li></li>
+		<li>
+			<ul>
+				<li></li>
+				<li></li>
+			</ul>
+		</li>
+		<li></li>
+		</div>
 
-    <!--Lista de definição (glossário)-->
+		<!--Lista de definição (glossário)-->
 
-    <dl>
-      <!--definition list-->
-      <dt></dt>
-      <!--efinition terme-->
-      <dd></dd>
-      <!--definition description-->
-      <dt></dt>
-      <dd>
-        </dt>
-    </dl>
+		<dl>
+			<!--definition list-->
+			<dt></dt>
+			<!--efinition terme-->
+			<dd></dd>
+			<!--definition description-->
+			<dt></dt>
+			<dd>
+				</dt>
+		</dl>
 
-    <!-- Podendo conter várias definições em uma lista
+		<!-- Podendo conter várias definições em uma lista
     Posso ter um termo com mais de uma definição ou varios termos com uma unica definição.-->
-    <dl>
-      <dt>
-      <dd></dd>
-      <dd></dd>
-      <dd></dd>
-      </dt>
-    </dl>
+		<dl>
+			<dt>
+			<dd></dd>
+			<dd></dd>
+			<dd></dd>
+			</dt>
+		</dl>
 
-    <dl>
-      <dt></dt>
-      <dt></dt>
-      <dt></dt>
-      <dd></dd>
-    </dl>
+		<dl>
+			<dt></dt>
+			<dt></dt>
+			<dt></dt>
+			<dd></dd>
+		</dl>
 
-    <!--
+		<!--
 propriedade over flow para que serve?
 serve para tratar o conteudo que excede um determinado elemento
 valores possiveis:
@@ -66,9 +66,122 @@ valores possiveis:
 * auto
 
 -->
+		<!--Tabelas
+    Exemplo 1-->
+		<table>
+			<tr>
+				<!--Tabela com uma linha e uma coluna-->
+				<!--table roll-->
+				<td></td>
+				<!--table data-->
+			</tr>
+		</table>
+		<!--exemplo 2-->
 
+		<table>
+			<tr>
+				<!--linhas-->
+				<td>1A</td>
+				<!--colunas-->
+				<td>1B</td>
+			</tr>
+			<tr>
+				<td>2A</td>
+				<td>2B</td>
+			</tr>
+			<tr>
+				<td>3A</td>
+				<td>3B</td>
+			</tr>
+		</table>
 
+		<!--exemplo 3
+        Mesclar não funciona (isso não funciona) 
+        para conseguir editar uma coluna com numero
+        de linhas e de colunas iremos usar dois atributos o colspan e o rowspan-->
+		<table>
+			<tr>
+				<td>1A</td>
+			</tr>
+			<tr>
+				<td>2A</td>
+				<td>2B</td>
+			</tr>
+			<tr>
+				<td>3A</td>
+				<td>3B</td>
+			</tr>
+		</table>
 
+		<!--colspan e rowspan na prática-->
+		<table>
+			<tr>
+				<td colspan="2">1A</td>
+				<!--vale 2 colunas-->
+			</tr>
+			<tr>
+				<td>2A</td>
+				<td>2B</td>
+			</tr>
+			<tr>
+				<td>3A</td>
+				<td>3B</td>
+			</tr>
+		</table>
+		<!--exemplo 2-->
+		<table>
+			<tr>
+				<td rowspan="2">1A</td>
+				<!--vale duas linhas-->
+			</tr>
+			<tr>
+				<td>2A</td>
+				<td>2B</td>
+			</tr>
+			<tr>
+				<td>3A</td>
+				<td>3B</td>
+			</tr>
+		</table>
+
+		<!--Adicionando semântica-->
+		<table>
+			<tr>
+				<th>1A</th>
+				<!--área especifica para o cabeçalho (table head)-->
+				<th>1B</th>
+			</tr>
+			<tr>
+				<td>2A</td>
+				<td>2B</td>
+			</tr>
+			<tr>
+				<td>3A</td>
+				<td>3B</td>
+			</tr>
+		</table>
+
+		<!--OU mais semântica-->
+		<table>
+			<thead>
+				<tr>
+					<th>1A</th>
+					<th>1B</th>
+				</tr>
+			</thead>
+			<tfoot>123</tfoot>
+			<!--depende do que você ta fazendo-->
+			<tbody>
+				<!--corpo da tabela-->
+				<tr>
+					<td>2A</td>
+					<td>2B</td>
+				</tr>
+			</tbody>
+
+		</table>
+		<!--propriedade border-collaps pode receber dois parametros separate e collapse
+        sendo que separate fica com espaço entre uma celula e outra e collapse mantem todas unidas não adianta por margin ou padding -->
 </body>
 
 </html>
