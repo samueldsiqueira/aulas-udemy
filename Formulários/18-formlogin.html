@@ -1,0 +1,121 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+
+<head>
+	<title> pagina de exemplo estrutura basica </title>
+	<meta charset="utf-8">
+	<meta name="author" content="Daniel">
+	<meta name="description" content="descrição bacanuda">
+	<meta name="keywords" content="html5, tecnologia">
+
+	<style>
+	</style>
+</head>
+
+<body>
+	<h1>Exemplo de formulario</h1>
+
+	<form action="#" method="POST" class=formLogin>
+		<!--dados sensiveis precisão de mais segurança
+		o input type password quando digita no campo aparece *****-->
+		<fieldset>
+
+			<legend>dados pessoais</legend>
+
+			<label>e-mail</label>
+			<input type="text">
+			<br>
+			<label>E-mail</label>
+			<input type="email" required autofocus>
+			<br>
+			<!--é mais semantico no responsivo pode mudar a aprensentação no teclado, depende do divice,
+			 tambem existem os input tel, url e search são bem parecidos com o email-->
+			<label></label>numero de filhos</label>
+			<input type="number" min="0" max="1000">
+			<!-- só aceita numeros, varia de acordo com browser
+			pode tambem ter determinação de minimo e maximo-->
+			<br>
+			<label>nascimento</label>
+			<input type="date" min="2018-01-30" max="2138-01-30">
+			<!--DATE é um atributo ligado a calendário
+				pode tambem ter determinação de minimo e maximo--->
+			<br>
+			<p>sexo:</p>
+			<label>
+				<input type="radio" name="sexo" value="M">
+				Masculino
+			</label>
+			<label>
+				<input type="radio" name="sexo" value="F">
+				Feminino
+			</label>
+			<!--
+				  O atributo name no input radio determina se as opções são do mesmo grupo
+					e podem ser marcadas ao mesmo tempo ou não.
+					Atributo Value especifica qual você marcou no exemplo sexo=F ou sexo=M
+					A palavra dentro da tag label torna na página a palavra parte da opção para ser marcada-->
+			<br>
+
+			<label>Estado</label>
+			<select name="Estado" id="">
+				<option value="0">Selecione</option>
+				<option value="SP">São Paulo</option>
+				<option value="RJ">Rio de Janeiro</option>
+				<option value="MG">Minas Gerais</option>
+			</select>
+			<!---->
+			<br>
+
+
+		</fieldset>
+		<fieldset>
+			<legend>Área de interesse</legend>
+			<label><input type="checkbox" name="html" value="html">HTML</label>
+			<label><input type="checkbox" name="css" value="css">CSS</label>
+			<label><input type="checkbox" name="JS" value="JS">Javascript</label>
+		</fieldset>
+
+		<fieldset>
+			<legend>Mensagem</legend>
+			<textarea style="resize:none" name="msg" cols="30" rows="10"></textarea>
+			<!--textarea precisa abrir e fechar  cols rows determinão numero de colunas e linhas que podem set utilizados
+						na caixa de texto o css pode formatar essa box para não ficar aumentando e diminuindo a box na página
+					o resize: none faz esse trabalho caso necessário-->
+
+			<textarea style="resize:none" name="contrato" cols="30" rows="10" readonly
+				maxlength="120">aqui entra o termo do contrato que precisa ser aceito por você</textarea>
+			<label><input type="checkbox" checked>Li e aceito</label>
+			<!--utilizando o readonly ou disable fazemos que a box não possa ser editada
+			o atributo maxlenght determina o maximo de caracteres
+		o atriburo checked é ao carregar a página ele já esteja marcado-->
+			<br>
+			<label>envie tua foto</label>
+			<input type="file" name="foto" id="">
+			<br>
+			<input type="hidden" name="espira" value="2018-12-30">
+			<!--os dados de data no código são no formado aaaa/mm/dd-->
+			<input type="submit" value="mandar">
+			<input type="button" value="button">
+			<!--botão sem função, mas que com javascript pode ser o que você quiser até a rihana-->
+			<input type="reset" value="reseta tudo">
+			<input type="range" name="" min="0" max="999" step="2">
+			<!--o atributo step é o espaço de salto de um valor para o outro no caso ali doi de 2 em 2-->
+			<input type="time" name="" id="">
+			<input type="color" name="" id="">
+			<select name="" id="" size="5" multiple>
+				<option value="">opção 1</option>
+				<option value="">opção 2</option>
+				<option value="">opção 3</option>
+				<option value="">opção 4</option>
+				<option value="">opção 5</option>
+			</select>
+			<!--a opção size determina qual tamanho da box e quantos vão ser exibidos 
+				o multiplete deixa a opção de escolher mais de uma opção-->
+
+		</fieldset>
+		<input type="submit" value="mandar">
+	</form>
+</body>
+
+</html>
