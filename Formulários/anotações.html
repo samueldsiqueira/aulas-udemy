@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<!--arquivo feito pelo aluno-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <!--
+    ------Formulários------
+   basta ter a tag <form></form> e tudo dentro
+   dessa tag deve ser inserido como formulário
+   ou para compor o mesmo
+
+  É necessário ter um tipo de dados 
+  especificado dentro da tag e um nome declarado
+  <input type="aqui dentro um elemento" name="alguma especificação"> 
+  
+  Existem vários elementos mas para enviar 
+  precisamos de uma tag um botão tendo outro input
+  dando um valor a esse botão que seria sua 
+  representatividade no layout, no caso:
+  value="ok", value="enviar" value=" "
+ 
+ 
+  ------Metodo de envio de dados------
+  Metodo GET é enviado pela propria página para a página;
+  sendo esse metodo menos seguro e mais facil de ser burlado.
+  Esse metodo consiste em pegar o formulário preenchido na página
+  e direcionar para ação solicitada na tag action=""
+  
+  
+  Metodo POST tipo de envio para servidor usando de mais segurança para envio das informações;
+  Envio junto com a requisição algo mais haver com a parte de infra e http;
+
+    ------Semântica em Formulários------
+  a tag <label for=""></label> serve para relacionar a entrada de dados a uma solicitação na página   
+  marcando ele ao input sendo então uma informação única usando um ID para relacionar a LABEL.
+
+
+  -->
+  <h1>Exemplo de formulário</h1>
+  <form action="http://google.com/search" method="GET" target="_blank">,
+    <label for="txtbusca">Faça uma busca</label>
+    <input type="text" name="q" id="txtbusca">
+    <input type="submit" value="ok">
+  </form>
+</body>
+
+</html>

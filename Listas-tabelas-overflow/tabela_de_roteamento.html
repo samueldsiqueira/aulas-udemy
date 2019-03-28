@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      margin: 5% auto 0;
+      /* margin: auto; todos os lados   */
+      /* margin: (top/bottom) (right/left);   */
+      /* margin: (top) (right/left) (bottom);   */
+      /* margin: (top) (right) (bottom) (left);   */
+      background-color: gray;
+      border: 1px solid black;
+    }
+
+    .header {
+      width: 100%;
+      display: flex;
+      margin-bottom: 5px;
+      border-bottom: 1px solid black;
+    }
+
+    .label {
+      font-size: large;
+      font-weight: bold;
+    }
+
+    .label-center {
+      text-align: center;
+    }
+
+    .column-name {
+      width: 40%;
+    }
+
+    .column-qtd {
+      width: 30%;
+    }
+
+    .column-status {
+      width: 30%;
+    }
+
+    .analyst-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    .analyst {
+      display: flex;
+    }
+
+    .qtd-block {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .status-block {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">
+      <span class="label column-name">Nome</span>
+      <span class="label label-center column-qtd">Chamados</span>
+      <span class="label label-center column-status">Status</span>
+    </div>
+
+    <div class="analyst-list">
+
+    </div>
+  </div>
+
+  <script>
+
+    const analystList = [
+      { nome: "Samuel", qdt: 10, status: 'livre' },
+      { nome: "Fulano", qdt: 2, status: 'livre' },
+      { nome: "Creide", qdt: 0, status: 'ocupado' },
+      { nome: "Norato", qdt: 1, status: 'preso' }
+    ]
+
+    function criarTemplateDeAnalista(analista) {
+      return `
+      <div class="analyst">
+        <span class="name column-name">${analista.nome}</span>
+        <div class="qtd-block column-qtd">
+          <button class="decrement">-</button>
+          <span class="qtd">${analista.qdt}</span>
+          <button class="increment">+</button>
+        </div>
+        <div class="status-block column-status">
+          <select name="status" class="status">
+            <option value="livre" ${analista.status === 'livre' ? 'selected' : ''}>Livre</option>
+            <option value="ocupado" ${analista.status === 'ocupado' ? 'selected' : ''}>Ocupado</option>
+            <option value="preso" ${analista.status === 'preso' ? 'selected' : ''}>Preso</option>
+          </select>
+        </div>
+      </div>
+      `
+    }
+
+    const analystListDiv = document.querySelector(".analyst-list") // peguei o elemento da tela
+
+    analystListDiv.innerHTML = analystList
+      .map((analyst) => criarTemplateDeAnalista(analyst))
+      .join('');
+
+    console.log(analystListDiv.innerHTML)
+
+
+    // const buttomDecrement = document.querySelector('.decrement');
+    // console.log(buttomDecrement)
+    // buttomDecrement.addEventListener('click', function (evento) {
+    //   console.log(evento)
+    // })
+  </script>
+</body>
+
+</html>
