@@ -1,0 +1,70 @@
+.main-content {
+  position: relative;
+}
+
+.main-content-section {
+  position: relative;
+}
+
+.recent-works-card {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 5px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.recent-works-card::before, .recent-works-card::after {
+  display: block;
+  content: "";
+  height: 6px;
+  width: 30px;
+  top: 0;
+  position: absolute;
+}
+
+.recent-works-card::before {
+  right: 50%;
+  background-color: red;
+}
+
+.recent-works-card::after {
+  left: 50%;
+  background-color: green;
+}
+
+.botao-parado {
+  position: fixed;
+  top: 5px;
+  right: 50px;
+  border: 1px solid green;
+  border-radius: 20%;
+  background-color: lightgreen;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.botao-parado:hover::before, .botao-parado:hover::after {
+  display: block;
+}
+
+.botao-parado::before, .botao-parado::after {
+  display: none;
+  content: "+";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 0px;
+}
+
+.botao-parado::before {
+  left: -13px;
+  color: red;
+}
+
+.botao-parado::after {
+  right: -10px;
+  color: green;
+}
