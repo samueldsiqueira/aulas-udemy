@@ -12,6 +12,8 @@
       width: 70%;
       margin: auto;
       font-family: Arial, Helvetica, sans-serif;
+      background-color: rgba(100, 104, 103, 0.315);
+      color: rgb(0, 0, 0);
     }
 
     h1 {
@@ -57,18 +59,41 @@
       margin: 200px 0px 11px;
     }
 
-    img {
+    .perfil {
       image-orientation: from-image;
-      margin: -10px 20px 50px 70px;
+      margin: -10px 20px 50px 50px;
+    }
+
+    .linkedin {
+      margin: 20px 80px 50px -100px;
+    }
+
+    .linkedin:hover {
+      background-color: black;
+    }
+
+    .github {
+      margin: 20px -85px 50px 100px;
+    }
+
+    .github:hover {
+      background-color: black;
     }
   </style>
 
 <body>
+  <h1><a href="" class="linkedin"><img
+        src="https://cdn.icon-icons.com/icons2/652/PNG/512/linkedin_icon-icons.com_59873.png" width="48" height="48"
+        alt=""></a>
+    Samuel D Siqueira
+    <a class="github" href="https://github.com/samueldsiqueira" target="_blank" rel="noopener noreferrer"><img
+        src="https://icon-icons.com/icons2/638/PNG/48/social_media_logo_github_icon-icons.com_59053.png" alt=""></a>
+  </h1>
 
-  <h1>Samuel D Siqueira</h1>
-  <a href="https://www.linkedin.com/in/samuel-d-siqueira-a7b16992/ target=" _blank" rel="noopener noreferrer"> <img
+  <a href="https://www.linkedin.com/in/samuel-d-siqueira-a7b16992/" class="perfil" target="blank"
+    rel="noopener noreferrer"> <img
       src="https://media-exp1.licdn.com/dms/image/C4E03AQETCYQzp4e5yA/profile-displayphoto-shrink_200_200/0?e=1584576000&v=beta&t=49mADj2BIENgnjipKAt9B0TDsxa4evKJ-mvEzRUlCbQ"
-      width="120" height="120" alt=""></a>
+      class="perfil" width="120" height="120" alt=""></a>
   <p class="descricao">Brasileiro, 28 anos , Casado , 1 filho(a) </p>
   <h2>Dados pessoais:</h2>
   <p class="descricao">samueldsiqueira@gmail.com 22999216676 | (22)992335107</p>
@@ -93,16 +118,26 @@
   <p class="descricao">Analista de Suporte Nivel 2 desde Janeiro/2014 Suporte a usuários, micros
     e
     sistemas como SISPAT mobilidade e tudo referente a windows XP, 7,10, server Enterprise e suas ferramentas.
-    Suporte em sistemas específicos da Petrobras e de empresas contratadas. Último salário e benefícios
-    Último salário R$ 1.898,00 Benefícios
-    Ticket alimentação/refeição, plano de saúde, plano odontológico. Outros objetivos
-    Pretensão salarial Faixa deR$ 1.800,00(Real)
-    Região de interesse Preferência pela região de Porto Alegre/Rio Grande do Sul/, somente no local selecionado
-    Aceita viajar pela empresa. Aceita considerar propostas de outras regiões. Informações complementares
-    Tenho aptidão para aprendizado em qualquer área descrita, já atuei como supervisor de vendas e administração de
-    servidor linux para servidores de jogos iniciante em programação, PHP, SQL, HTML5, CSS, JAVASCRIPT e Python</p>
+    Suporte em sistemas específicos da Petrobras e de empresas contratadas. Pretensão salarial Faixa deR$
+    1.800,00(Real).
+    <br>
+    <h2>Região de interesse</h2>
+    <p class="descricao">Preferência pela região de Porto Alegre/Rio Grande do Sul/, somente no local selecionado
+      Aceita viajar pela empresa. Aceita considerar propostas de outras regiões. </p>
+    <h2>Informações complementares</h2>
 
-  <footer> Última atualização 22/12/2019</footer>
+    <p class="descricao"> Tenho aptidão para aprendizado em qualquer área descrita, já atuei como supervisor de vendas e
+      administração de
+      servidor linux para servidores de jogos iniciante em programação, PHP, SQL, HTML5, CSS, JAVASCRIPT e Python </p>
+
+
+
+    <h2>Último salário e benefícios</h2>
+    <p class="descricao">Último salário R$ 1.898,00 Benefícios Ticket alimentação/refeição, plano de saúde, plano
+      odontológico. Outros objetivos</p>
+
+
+    <footer> Última atualização 22/12/2019</footer>
 </body>
 </head>
 
