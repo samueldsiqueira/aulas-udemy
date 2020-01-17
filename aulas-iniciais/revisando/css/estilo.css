@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ccc;
+  margin: 0px;
+  /*body aplica margin automática*/
+}
+
+.hero {
+  background-image: url(../imagens/bg-3.jpg);
+  height: 500px;
+  background-position: right, center;
+  background-size: cover;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  margin: 150px;
+}
+
+.hero-content p {
+  background-color: rgba(0, 0, 0, 0.418);
+  text-shadow: 3px 3px 4px black;
+  margin: 10px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.hero-content h1 {
+  text-transform: uppercase;
+  font-size: 46px;
+  text-shadow: 3px 3px 5px black;
+  /** sombra no texto**/
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+.content-section {
+  background-color: white;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  background-color: rgba(104, 102, 102, 0.205);
+  color: black;
+  height: 25px;
+  padding: 15px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+footer {
+  background-color: rgb(128, 128, 128);
+  text-shadow: 2px 2px 3px black;
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+
+.menu {
+  background-color: rgb(44, 44, 44);
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+  padding: 15px;
+}
+
+.card {
+  display: inline-block;
+  text-align: center;
+  margin: 0px 40px 0px 120px;
+  color: white;
+}
+
+.card-2 {
+  display: inline-block;
+  text-align: center;
+  margin: 0px 40px 0px;
+  color: white;
+}
+
+.card-3 {
+  display: inline-block;
+  text-align: center;
+  margin: 0px 40px 0px;
+  color: white;
+}
+
+img {
+  margin-bottom: -20px;
+}
