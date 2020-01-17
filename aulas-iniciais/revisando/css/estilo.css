@@ -10,6 +10,7 @@ body {
   height: 500px;
   background-position: right, center;
   background-size: cover;
+  border-top: 1px solid transparent;
 }
 
 .hero-content {
@@ -24,6 +25,7 @@ body {
   margin: 10px;
   padding: 5px;
   display: inline-block;
+  border-bottom: 1px solid white;
 }
 
 .hero-content h1 {
@@ -31,6 +33,33 @@ body {
   font-size: 46px;
   text-shadow: 3px 3px 5px black;
   /** sombra no texto**/
+}
+
+.hero nav ul {
+  text-align: right;
+  margin: 30px 50px 0 0;
+}
+
+.hero nav li {
+  display: inline-block;
+  list-style: none;
+  border: 1px solid white;
+  margin-left: 10px;
+}
+
+.hero nav a {
+  background: rgba(0, 0, 0, 0.288);
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.hero nav a:hover {
+  background-color: rgba(0, 0, 0, 0.644);
 }
 
 main {
@@ -57,14 +86,18 @@ header p {
 }
 
 footer {
-  background-color: rgb(128, 128, 128);
+  background: rgb(128, 128, 128);
   text-shadow: 2px 2px 3px black;
-  padding: 15px;
+  line-height: 80px;
+  /**o valor pode ser subistituido pelo line- height quando for um unico item padding: 15px;**/
   text-align: center;
   color: white;
 }
 
-.menu {
+.card {
+  display: inline-block;
+  text-align: center;
+  color: white;
   background-color: rgb(44, 44, 44);
   font-size: 15px;
   text-transform: uppercase;
@@ -73,27 +106,20 @@ footer {
   padding: 15px;
 }
 
-.card {
-  display: inline-block;
-  text-align: center;
-  margin: 0px 40px 0px 120px;
-  color: white;
-}
-
-.card-2 {
-  display: inline-block;
-  text-align: center;
-  margin: 0px 40px 0px;
-  color: white;
-}
-
-.card-3 {
-  display: inline-block;
-  text-align: center;
-  margin: 0px 40px 0px;
-  color: white;
-}
-
 img {
   margin-bottom: -20px;
 }
+
+ul {}
+
+/** elemento de nivel de bloco ele ocupa a área toda disponivel. Exemplo <p>, <h1>...<h6>, <div>, <ul>, <ol>, <li> e <footer>, todos esses recebem modelagem de caixa, (modelbox)
+
+
+A nivel de linha ele não gera quebra de linha, e tambem não ocupa 100% da área disponivel.
+Exemplo: <a>, <strong>, <b>, <em>, <i>, <span> e <img>
+
+
+Como utilizar o atributo display:
+muda o comportamento padrão de um elementor de linha com valor "block".
+visibility: hidden; - remove da linha mas mantem o espaço determinado no CSS.
+**/
