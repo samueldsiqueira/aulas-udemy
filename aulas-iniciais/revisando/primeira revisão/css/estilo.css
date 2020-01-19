@@ -11,6 +11,13 @@ body {
   background-position: right, center;
   background-size: cover;
   border-top: 1px solid transparent;
+  z-index: 4;
+}
+
+.hero nav ul {
+  position: fixed;
+
+
 }
 
 .hero-content {
@@ -57,7 +64,8 @@ body {
   text-transform: uppercase;
 }
 
-.card-1, .card-2 {
+.card-1,
+.card-2 {
   margin-right: 2%;
 }
 
