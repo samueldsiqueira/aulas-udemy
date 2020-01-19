@@ -19,6 +19,13 @@ body {
   margin: 150px;
 }
 
+.hero-content h1 {
+  text-transform: uppercase;
+  font-size: 46px;
+  text-shadow: 3px 3px 5px black;
+  /** sombra no texto**/
+}
+
 .hero-content p {
   background-color: rgba(0, 0, 0, 0.418);
   text-shadow: 3px 3px 4px black;
@@ -28,11 +35,35 @@ body {
   border-bottom: 1px solid white;
 }
 
-.hero-content h1 {
+.content-section {
+  background-color: white;
+  padding: 10px;
+  margin-top: 15px;
+  overflow: auto;
+}
+
+.card {
+  width: 32%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.card p {
+  background-color: rgb(49, 49, 49);
+  color: white;
+  margin: 0;
+  padding: 12px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  font-size: 46px;
-  text-shadow: 3px 3px 5px black;
-  /** sombra no texto**/
+}
+
+.card-1, .card-2 {
+  margin-right: 2%;
+}
+
+.card img {
+  width: 100%;
+  display: block;
 }
 
 .hero nav ul {
@@ -67,13 +98,6 @@ main {
   margin: auto;
 }
 
-.content-section {
-  background-color: white;
-  padding: 15px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 h2 {
   background-color: rgba(104, 102, 102, 0.205);
   color: black;
@@ -94,24 +118,6 @@ footer {
   color: white;
 }
 
-.card {
-  display: inline-block;
-  text-align: center;
-  color: white;
-  background-color: rgb(44, 44, 44);
-  font-size: 15px;
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 3px;
-  padding: 15px;
-}
-
-img {
-  margin-bottom: -20px;
-}
-
-ul {}
-
 /** elemento de nivel de bloco ele ocupa a área toda disponivel. Exemplo <p>, <h1>...<h6>, <div>, <ul>, <ol>, <li> e <footer>, todos esses recebem modelagem de caixa, (modelbox)
 
 
@@ -122,4 +128,7 @@ Exemplo: <a>, <strong>, <b>, <em>, <i>, <span> e <img>
 Como utilizar o atributo display:
 muda o comportamento padrão de um elementor de linha com valor "block".
 visibility: hidden; - remove da linha mas mantem o espaço determinado no CSS.
+
+ vamos falar do float. era usada mais para orientar objeto no texto, mas hjoje em dia é melhor com outras tecnologias.
+Propriedade Clear serve para limpar os elementos que tem Float antes dele.
 **/
