@@ -1,0 +1,88 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+
+<head>
+  <title> pagina de exemplo estrutura basica </title>
+  <meta charset="utf-8">
+  <meta name="author" content="Daniel">
+  <meta name="description" content="descrição bacanuda">
+  <meta name="keywords" content="html5, tecnologia">
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: auto;
+      background-color: beige
+    }
+
+    th {
+      background-color: rgb(61, 83, 51);
+      border: solid 3px rgb(66, 57, 50);
+      padding: 15px;
+    }
+
+    td {
+      border: solid 1px black;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <caption>Tabela de preços de cursos</caption>
+    <thead>
+      <tr>
+        <th>Área</th>
+        <th>Curso</th>
+        <th>Investimento</th>
+      </tr>
+    </thead>
+
+    <tfoot>
+      <tr>
+        <td colspan="3">Valores sujeitos a alterações sem prévio aviso.</td>
+      </tr>
+    </tfoot>
+
+    <tbody>
+      <tr>
+        <td rowspan="3">Design</td>
+        <td>InDesign</td>
+        <td rowspan="7">R$ 1.000,00</td>
+      </tr>
+
+      <tr>
+        <td>Photoshop</td>
+      </tr>
+
+      <tr>
+        <td>Illustrator</td>
+      </tr>
+
+      <tr>
+        <td rowspan="4">Development</td>
+        <td>HTML</td>
+      </tr>
+
+      <tr>
+        <td>CSS</td>
+      </tr>
+
+      <tr>
+        <td>JavaScript</td>
+      </tr>
+
+      <tr>
+        <td>PHP</td>
+      </tr>
+    </tbody>
+
+  </table>
+</body>
