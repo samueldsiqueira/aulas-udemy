@@ -9,7 +9,7 @@
   <meta name="description" content="descrição bacanuda">
   <meta name="keywords" content="html5, tecnologia">
   <style>
-    body {
+    /*body {
       margin: 0;
       padding: 50;
     }
@@ -48,6 +48,59 @@
 
     #log {
       margin: 20px;
+    }*/
+    .formLogin {
+      width: 250px;
+      margin: 50px auto;
+    }
+
+    .formLogin label {
+      margin-top: 15px;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .formLogin fieldset {
+      background-color: rgba(0, 0, 0, 0.301);
+    }
+
+    .formLogin legend {
+      display: inline-block;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.39);
+      color: #ddd;
+    }
+
+    #user,
+    #pass,
+    .btn {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 15px;
+      font-size: 18px;
+      font-family: sans-serif;
+      border: none;
+    }
+
+    .btn {
+      margin-top: 15px;
+    }
+
+    #user {
+      margin-bottom: 15px;
+
+    }
+
+    #user,
+    #pass {
+
+      background-color: #ddd;
+    }
+
+    #user:focus,
+    #pass:focus {
+      background: white;
     }
   </style>
 </head>
@@ -62,5 +115,26 @@
 
 </fieldset>
 <input class="button" type="submit" value="Login">
+
+<hr>
+
+
+
+<hr>
+<form action="" method="get" class="formLogin">
+
+  <fieldset>
+    <legend>Login</legend>
+    <label for="user">Digite seu usuário</label>
+    <input type="text" name="alinhar com backend" id="user" autofocus>
+
+    <label for="pass">Digite a senha</label>
+    <input type="password" name="pass" id="pass">
+
+    <input type="submit" value="login" class="btn">
+
+
+  </fieldset>
+</form>
 
 </html>
